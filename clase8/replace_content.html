@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../js/jquery.js"></script>
+    <script>
+    $("document").ready(function(){
+      //creando un elemento
+      //si se el quita los signo a la p, se imprime lo que esta en el div y luego lo de newPara
+      var newPara = $("<p>");
+
+      newPara.append("<i>Hello students</i>");
+
+      $("#box").html(newPara);
+
+    });
+    </script>
+  </head>
+  <body>
+    <div id="box">
+<!-- si hay un texto aqui no se imprime xq lo esta sustituyendo con jquery -->
+    </div>
+  </body>
+</html>
